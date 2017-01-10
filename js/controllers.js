@@ -8586,5 +8586,8 @@ angular.module('PasswordConfirm', []).directive('changePasswordC', function () {
         
         .controller('createMystyleTestCtrl', function ($scope, $http, $stateParams, $ionicLoading) {
             console.log('Welcome from createMystyleTestCtrl');
+            $ionicGesture.on('tap', function (event) { 
+                console.log('you just tap');
+            });
         })        
         ;
